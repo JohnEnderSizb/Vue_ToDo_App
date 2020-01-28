@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header/>
     <Todo v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
   </div>
 </template>
@@ -7,11 +8,13 @@
 <script>
 
   import Todo from './components/Todo.vue';
+  import Header from "./components/layout/Header";
 
 export default {
   name: 'app',
   components: {
-    Todo
+    Todo,
+    Header
   },
 
   data() {

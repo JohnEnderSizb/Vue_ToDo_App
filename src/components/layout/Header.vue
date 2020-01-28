@@ -1,5 +1,5 @@
 <template>
-    <header class="deader">ToDoList</header>
+    <header class="header">ToDoList</header>
 </template>
 
 <script>
